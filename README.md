@@ -1,6 +1,6 @@
 # Chess Timer
 
-<!--![App Screenshot](screenshot.png)-->
+![App Screenshot](https://i.ibb.co/6P88DBG/256.png)
 
 ## Overview
 
@@ -32,15 +32,15 @@ The Chess Timer App is a simple and elegant tool designed to enhance your chess-
 
 ## Contributing
 
-Contributions are welcome! If you have any bug fixes, feature requests, or suggestions, please open an issue on our [GitHub repository](https://github.com/yourusername/chess-timer-app). We appreciate your input and help in making this app even better.
+Contributions are welcome! If you have any bug fixes, feature requests, or suggestions, please open an issue on our [GitHub repository](https://github.com/davidmahbubi/chess-timer/tree/main). We appreciate your input and help in making this app even better.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://www.mit.edu/~amini/LICENSE.md) file for details.
 
 ## Contact
 
-If you have any questions or need assistance, feel free to contact us at chess-timer-support@example.com.
+If you have any questions or need assistance, feel free to contact us at david.mahbubi@icloud.com.
 
 ## Acknowledgments
 
