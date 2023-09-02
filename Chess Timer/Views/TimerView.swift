@@ -41,10 +41,10 @@ struct TimerView: View {
                         }
                     }
             }
-                .onTapGesture {
-                    firstTimerRunning.toggle()
-                    secondTimerRunning.toggle()
-                }
+            .onTapGesture {
+                firstTimerRunning.toggle()
+                secondTimerRunning.toggle()
+            }
             ZStack {
                 RoundedRectangle(cornerRadius: 15)
                     .fill(.green)
@@ -62,10 +62,10 @@ struct TimerView: View {
                         }
                     }
             }
-                .onTapGesture {
-                    firstTimerRunning.toggle()
-                    secondTimerRunning.toggle()
-                }
+            .onTapGesture {
+                firstTimerRunning.toggle()
+                secondTimerRunning.toggle()
+            }
         }
         .padding()
     }
