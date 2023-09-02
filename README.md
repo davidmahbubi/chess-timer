@@ -11,9 +11,9 @@ The Chess Timer App is a simple and elegant tool designed to enhance your chess-
 - **Dual Timers:** Manage the time for both players simultaneously.
 - **Customizable Time Controls:** Set your preferred time controls for initial time
 - **Simple and Intuitive:** Easy-to-use interface for a smooth chess-playing experience.
-- ** (WIP) Pause the Timer:** Get sound alerts when the timer reaches specific intervals.
-- ** (WIP) Sound Notifications:** Get sound alerts when the timer reaches specific intervals.
-- ** (WIP) Background Mode:** The timer continues running even when the app is in the background.
+- **(WIP) Pause the Timer:** Get sound alerts when the timer reaches specific intervals.
+- **(WIP) Sound Notifications:** Get sound alerts when the timer reaches specific intervals.
+- **(WIP) Background Mode:** The timer continues running even when the app is in the background.
 
 ## Getting Started
 
