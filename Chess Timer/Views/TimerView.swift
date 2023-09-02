@@ -57,6 +57,7 @@ struct TimerView: View {
                         .onReceive(timer) { _ in
                             if firstTimerElapsed == (60 * Int(minutes)!) {
                                 isTimerFinished = true
+                                timer.upstream.connect().cancel()
                                 return
                             }
                             if firstTimerRunning && !isTimerFinished {
@@ -93,6 +94,7 @@ struct TimerView: View {
                         .onReceive(timer) { _ in
                             if secondTimerElapsed == (60 * Int(minutes)!) {
                                 isTimerFinished = true
+                                timer.upstream.connect().cancel()
                                 return
                             }
                             if secondTimerRunning && !isTimerFinished {
@@ -102,6 +104,12 @@ struct TimerView: View {
                 }
             }
         }
+        .alert(isPresented: $isTimerFinished, content: {
+            Alert(
+                title: Text("Finished"),
+                message: Text("Timer end! \(firstTimerElapsed > secondTimerElapsed ? "Green" : "Red") player won!")
+            )
+        })
         .padding()
     }
     
