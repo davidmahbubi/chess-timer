@@ -41,6 +41,7 @@ struct MenuView: View {
             }
             .disabled((Int(totalMinutes) ?? 0) <= 0)
         }
+        .frame(maxWidth: 600)
     }
 }
 

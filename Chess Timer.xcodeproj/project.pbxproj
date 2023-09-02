@@ -16,6 +16,8 @@
 		C0BCD98D2AA3807D00D337CB /* Chess_TimerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BCD98C2AA3807D00D337CB /* Chess_TimerUITestsLaunchTests.swift */; };
 		C0BCD99B2AA386D900D337CB /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BCD99A2AA386D900D337CB /* MenuView.swift */; };
 		C0BCD99D2AA3878900D337CB /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BCD99C2AA3878900D337CB /* TimerView.swift */; };
+		C0BCD99F2AA39A2F00D337CB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C0BCD99E2AA39A2F00D337CB /* README.md */; };
+		C0BCD9A22AA39A6600D337CB /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C0BCD9A12AA39A6600D337CB /* AppIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		C0BCD98C2AA3807D00D337CB /* Chess_TimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chess_TimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C0BCD99A2AA386D900D337CB /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		C0BCD99C2AA3878900D337CB /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		C0BCD99E2AA39A2F00D337CB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C0BCD9A12AA39A6600D337CB /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 		C0BCD9632AA3807C00D337CB = {
 			isa = PBXGroup;
 			children = (
+				C0BCD9A02AA39A3C00D337CB /* RepoAssets */,
+				C0BCD99E2AA39A2F00D337CB /* README.md */,
 				C0BCD96E2AA3807C00D337CB /* Chess Timer */,
 				C0BCD97F2AA3807D00D337CB /* Chess TimerTests */,
 				C0BCD9892AA3807D00D337CB /* Chess TimerUITests */,
@@ -139,6 +145,14 @@
 				C0BCD99C2AA3878900D337CB /* TimerView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		C0BCD9A02AA39A3C00D337CB /* RepoAssets */ = {
+			isa = PBXGroup;
+			children = (
+				C0BCD9A12AA39A6600D337CB /* AppIcon.png */,
+			);
+			path = RepoAssets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,8 +259,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0BCD99F2AA39A2F00D337CB /* README.md in Resources */,
 				C0BCD9772AA3807D00D337CB /* Preview Assets.xcassets in Resources */,
 				C0BCD9742AA3807D00D337CB /* Assets.xcassets in Resources */,
+				C0BCD9A22AA39A6600D337CB /* AppIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +457,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,6 +487,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

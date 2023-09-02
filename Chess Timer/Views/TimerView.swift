@@ -28,8 +28,7 @@ struct TimerView: View {
                     .fill(.red)
                 Text("\(countTimer(of: firstTimerElapsed))")
                     .foregroundStyle(.white)
-                    .font(.system(size: 80, design: .rounded))
-                    .fontWeight(.bold)
+                    .font(.system(size: 80, weight: .bold, design: .rounded))
                     .scaleEffect(CGSize(width: -1.0, height: -1.0))
                     .onReceive(timer) { _ in
                         if firstTimerElapsed == (60 * Int(minutes)!) {
@@ -50,8 +49,7 @@ struct TimerView: View {
                     .fill(.green)
                 Text("\(countTimer(of: secondTimerElapsed))")
                     .foregroundStyle(.white)
-                    .font(.system(size: 80, design: .rounded))
-                    .fontWeight(.bold)
+                    .font(.system(size: 80, weight: .bold, design: .rounded))
                     .onReceive(timer) { _ in
                         if secondTimerElapsed >= (60 * Int(minutes)!) {
                             isTimerFinished = true
