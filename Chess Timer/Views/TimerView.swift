@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct TimerView: View {
     
@@ -23,10 +24,14 @@ struct TimerView: View {
     @State private var isSecondButtonTapped = false
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    let impactFeedbackGenerator = UIImpactFeedbackGenerator(style: .heavy)
     
     var body: some View {
         VStack {
             Button(action: {
+                
+                impactFeedbackGenerator.impactOccurred()
+                
                 // Toggle the button state when tapped
                 withAnimation {
                     isFirstButtonTapped.toggle()
@@ -61,6 +66,9 @@ struct TimerView: View {
                 }
             }
             Button(action: {
+                
+                impactFeedbackGenerator.impactOccurred()
+                
                 // Toggle the button state when tapped
                 withAnimation {
                     isSecondButtonTapped.toggle()
