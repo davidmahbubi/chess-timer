@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C0BCD9702AA3807C00D337CB /* Chess_TimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BCD96F2AA3807C00D337CB /* Chess_TimerApp.swift */; };
+		C0BCD9702AA3807C00D337CB /* ChessTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BCD96F2AA3807C00D337CB /* ChessTimerApp.swift */; };
 		C0BCD9722AA3807C00D337CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BCD9712AA3807C00D337CB /* ContentView.swift */; };
 		C0BCD9742AA3807D00D337CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0BCD9732AA3807D00D337CB /* Assets.xcassets */; };
 		C0BCD9772AA3807D00D337CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0BCD9762AA3807D00D337CB /* Preview Assets.xcassets */; };
 		C0BCD9812AA3807D00D337CB /* Chess_TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BCD9802AA3807D00D337CB /* Chess_TimerTests.swift */; };
 		C0BCD98B2AA3807D00D337CB /* Chess_TimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BCD98A2AA3807D00D337CB /* Chess_TimerUITests.swift */; };
 		C0BCD98D2AA3807D00D337CB /* Chess_TimerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BCD98C2AA3807D00D337CB /* Chess_TimerUITestsLaunchTests.swift */; };
+		C0BCD99B2AA386D900D337CB /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BCD99A2AA386D900D337CB /* MenuView.swift */; };
+		C0BCD99D2AA3878900D337CB /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BCD99C2AA3878900D337CB /* TimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +37,7 @@
 
 /* Begin PBXFileReference section */
 		C0BCD96C2AA3807C00D337CB /* Chess Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chess Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0BCD96F2AA3807C00D337CB /* Chess_TimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chess_TimerApp.swift; sourceTree = "<group>"; };
+		C0BCD96F2AA3807C00D337CB /* ChessTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessTimerApp.swift; sourceTree = "<group>"; };
 		C0BCD9712AA3807C00D337CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C0BCD9732AA3807D00D337CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0BCD9762AA3807D00D337CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -44,6 +46,8 @@
 		C0BCD9862AA3807D00D337CB /* Chess TimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chess TimerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BCD98A2AA3807D00D337CB /* Chess_TimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chess_TimerUITests.swift; sourceTree = "<group>"; };
 		C0BCD98C2AA3807D00D337CB /* Chess_TimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chess_TimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C0BCD99A2AA386D900D337CB /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		C0BCD99C2AA3878900D337CB /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,8 @@
 		C0BCD96E2AA3807C00D337CB /* Chess Timer */ = {
 			isa = PBXGroup;
 			children = (
-				C0BCD96F2AA3807C00D337CB /* Chess_TimerApp.swift */,
-				C0BCD9712AA3807C00D337CB /* ContentView.swift */,
+				C0BCD9992AA3808D00D337CB /* Views */,
+				C0BCD96F2AA3807C00D337CB /* ChessTimerApp.swift */,
 				C0BCD9732AA3807D00D337CB /* Assets.xcassets */,
 				C0BCD9752AA3807D00D337CB /* Preview Content */,
 			);
@@ -125,6 +129,16 @@
 				C0BCD98C2AA3807D00D337CB /* Chess_TimerUITestsLaunchTests.swift */,
 			);
 			path = "Chess TimerUITests";
+			sourceTree = "<group>";
+		};
+		C0BCD9992AA3808D00D337CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C0BCD9712AA3807C00D337CB /* ContentView.swift */,
+				C0BCD99A2AA386D900D337CB /* MenuView.swift */,
+				C0BCD99C2AA3878900D337CB /* TimerView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +272,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0BCD9722AA3807C00D337CB /* ContentView.swift in Sources */,
-				C0BCD9702AA3807C00D337CB /* Chess_TimerApp.swift in Sources */,
+				C0BCD99B2AA386D900D337CB /* MenuView.swift in Sources */,
+				C0BCD99D2AA3878900D337CB /* TimerView.swift in Sources */,
+				C0BCD9702AA3807C00D337CB /* ChessTimerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +433,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Chess Timer/Preview Content\"";
+				DEVELOPMENT_TEAM = AHLML969C8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -445,6 +462,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Chess Timer/Preview Content\"";
+				DEVELOPMENT_TEAM = AHLML969C8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

@@ -1,0 +1,111 @@
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & 
+Swift.gitignore
+
+## User settings
+xcuserdata/
+
+## Compatibility with Xcode 11.4+
+*.xcuserstate
+
+## Xcode
+#
+# gitignore contributors: remember to update this file through the GitHub website: 
+https://github.com/github/gitignore/blob/master/Objective-C.gitignore
+
+## Xcode Patch
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+
+## Pods
+Pods/
+Podfile.lock
+DerivedData/
+.build/
+
+## SwiftUI
+#
+# .swiftpm
+# .build
+# .swiftpm/xcode/package.resolved
+# .swiftpm/xcode/playgrounds
+# build
+
+## AppCode
+.idea/
+
+## JetBrains
+# .idea
+.idea/
+
+## User-specific files
+*.xcuserdatad
+# iCloud
+# Untitled Folder
+.DS_Store
+
+## Xcode
+#
+# gitignore contributors: remember to update this file through the GitHub website: 
+https://github.com/github/gitignore/blob/master/Objective-C.gitignore
+
+## Xcode Patch
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+
+## Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from the Xcode workspace
+#xcuserdata/
+
+# Carthage
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts/
+
+# CocoaPods
+# We recommend against adding the Pods directory to your .gitignore. However,
+# you should judge for yourself, the pros and cons are mentioned at:
+# 
+https://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
+
+# CocoaPods
+# We recommend against adding the Pods directory to your .gitignore. However,
+# you should judge for yourself, the pros and cons are mentioned at:
+# 
+https://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
+
+# fastlane
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate 
+the screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://github.com/fastlane/fastlane/blob/master/docs/Gitignore.md
+
+# Carthage
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts/
+
+# fastlane
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate 
+the screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://github.com/fastlane/fastlane/blob/master/docs/Gitignore.md
+
+# Code Injection
+# After new code Injection tools there's a generated folder /iOSInjectionProject
+# https://github.com/johnno1962/injectionforxcode
+
+# fastlane
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate 
+the screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://github.com/fastlane/fastlane/blob/master/docs/Gitignore.md
+
+# Package
+.pact/
+pact/
+
