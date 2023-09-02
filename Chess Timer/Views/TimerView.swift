@@ -19,50 +19,79 @@ struct TimerView: View {
     
     @State var isTimerFinished: Bool = false
     
+    @State private var isFirstButtonTapped = false
+    @State private var isSecondButtonTapped = false
+    
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     var body: some View {
         VStack {
-            ZStack {
-                RoundedRectangle(cornerRadius: 15)
-                    .fill(.red)
-                Text("\(countTimer(of: firstTimerElapsed))")
-                    .foregroundStyle(.white)
-                    .font(.system(size: 80, weight: .bold, design: .rounded))
-                    .scaleEffect(CGSize(width: -1.0, height: -1.0))
-                    .onReceive(timer) { _ in
-                        if firstTimerElapsed == (60 * Int(minutes)!) {
-                            isTimerFinished = true
-                            return
-                        }
-                        if firstTimerRunning && !isTimerFinished {
-                            firstTimerElapsed += 1
-                        }
+            Button(action: {
+                // Toggle the button state when tapped
+                withAnimation {
+                    isFirstButtonTapped.toggle()
+                }
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                    withAnimation {
+                        isFirstButtonTapped.toggle()
                     }
-            }
-            .onTapGesture {
+                }
+                
                 firstTimerRunning.toggle()
                 secondTimerRunning.toggle()
+            }) {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 15)
+                        .fill(.red)
+                        .scaleEffect(isFirstButtonTapped ? 1.1 : 1.0) // Scale when button is tapped
+                    Text("\(countTimer(of: firstTimerElapsed))")
+                        .foregroundStyle(.white)
+                        .font(.system(size: 80, weight: .bold, design: .rounded))
+                        .scaleEffect(CGSize(width: -1.0, height: -1.0))
+                        .onReceive(timer) { _ in
+                            if firstTimerElapsed == (60 * Int(minutes)!) {
+                                isTimerFinished = true
+                                return
+                            }
+                            if firstTimerRunning && !isTimerFinished {
+                                firstTimerElapsed += 1
+                            }
+                        }
+                }
             }
-            ZStack {
-                RoundedRectangle(cornerRadius: 15)
-                    .fill(.green)
-                Text("\(countTimer(of: secondTimerElapsed))")
-                    .foregroundStyle(.white)
-                    .font(.system(size: 80, weight: .bold, design: .rounded))
-                    .onReceive(timer) { _ in
-                        if secondTimerElapsed >= (60 * Int(minutes)!) {
-                            isTimerFinished = true
-                            return
-                        }
-                        if secondTimerRunning && !isTimerFinished {
-                            secondTimerElapsed += 1
-                        }
+            Button(action: {
+                // Toggle the button state when tapped
+                withAnimation {
+                    isSecondButtonTapped.toggle()
+                }
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                    withAnimation {
+                        isSecondButtonTapped.toggle()
                     }
-            }
-            .onTapGesture {
+                }
+                
                 firstTimerRunning.toggle()
                 secondTimerRunning.toggle()
+            }) {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 15)
+                        .fill(.green)
+                        .scaleEffect(isSecondButtonTapped ? 1.1 : 1.0) // Scale when button is tapped
+                    Text("\(countTimer(of: secondTimerElapsed))")
+                        .foregroundStyle(.white)
+                        .font(.system(size: 80, weight: .bold, design: .rounded))
+                        .onReceive(timer) { _ in
+                            if secondTimerElapsed == (60 * Int(minutes)!) {
+                                isTimerFinished = true
+                                return
+                            }
+                            if secondTimerRunning && !isTimerFinished {
+                                secondTimerElapsed += 1
+                            }
+                        }
+                }
             }
         }
         .padding()
